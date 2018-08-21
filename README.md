@@ -25,9 +25,7 @@ Refer this [git workflow for contributors](.github/GIT-WORKFLOW.md).
 
 ## I only Remove composer.json  require `bower-asset/bootstrap3-dialog` 
 
-PHP Version: 7.2.7
-OS: Ubuntu 16.04 LTS
-
+i have this error:
 
 ```
 Your requirements could not be resolved to an installable set of packages.
@@ -40,11 +38,13 @@ Your requirements could not be resolved to an installable set of packages.
     - Installation request for wakasann/yii2-dialog ^1.0 -> satisfiable by wakasann/yii2-dialog[v1.0.0, v1.0.1, v1.0.2, v1.0.3].
 ```
 
-i try many way, `compoer require require fxp/composer-asset-plugin`,install success, problem is same.
+i try many way, `compoer require require fxp/composer-asset-plugin`,install success, but that not working.
+
+install:
 
 `composer require wakasann/yii2-dialog "v1.0.5"`
 
-use terminal or cmd tools,go to project root path, run `npm init` and `npm install --save bootstrap3-dialog` ,them copy `node_modules` -> `bootstrap3-dialog` folder to `vendor` -> `bower-asset` folder
+use your linux terminal or windows cmd tools,go to project root path, run `npm init` ,them run `npm install --save bootstrap3-dialog` , copy `node_modules` -> `bootstrap3-dialog` folder to `vendor` -> `bower-asset` folder after npm install success
 
 
 
