@@ -31,20 +31,12 @@ class DialogAsset extends AssetBundle
      */
     public $depends = [];
     
-    public $css = [
-        'https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.35.4/css/bootstrap-dialog.min.css'
-    ];
-    
-    public $js = [
-      'https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.35.4/js/bootstrap-dialog.min.js',
-    ];
-    
     /**
      * @inheritdoc
      */
     public function init()
     {
-        //$this->setSourcePath(__DIR__ . '/assets');
+        $this->setSourcePath(__DIR__ . '/assets');
         $this->setupAssets('js', ['js/dialog']);
         parent::init();
     }
