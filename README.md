@@ -23,6 +23,31 @@ How to contribute via a pull request?
 -------------------------------------
 Refer this [git workflow for contributors](.github/GIT-WORKFLOW.md).
 
+## I only Remove composer.json  require `bower-asset/bootstrap3-dialog` 
+
+PHP Version: 7.2.7
+OS: Ubuntu 16.04 LTS
+
+
+```
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - wakasann/yii2-dialog v1.0.3 requires bower-asset/bootstrap3-dialog ~1.34 -> no matching package found.
+    - wakasann/yii2-dialog v1.0.2 requires bower-asset/bootstrap3-dialog ~1.34 -> no matching package found.
+    - wakasann/yii2-dialog v1.0.1 requires bower-asset/bootstrap3-dialog ~1.34 -> no matching package found.
+    - wakasann/yii2-dialog v1.0.0 requires bower-asset/bootstrap3-dialog ~1.34 -> no matching package found.
+    - Installation request for wakasann/yii2-dialog ^1.0 -> satisfiable by wakasann/yii2-dialog[v1.0.0, v1.0.1, v1.0.2, v1.0.3].
+```
+
+i try many way, `compoer require require fxp/composer-asset-plugin`,install success, problem is same.
+
+`composer require wakasann/yii2-dialog "v1.0.5"`
+
+use terminal or cmd tools,go to project root path, run `npm init` and `npm install --save bootstrap3-dialog` ,them copy `node_modules` -> `bootstrap3-dialog` folder to `vendor` -> `bower-asset` folder
+
+
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
